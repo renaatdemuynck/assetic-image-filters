@@ -1,0 +1,20 @@
+{
+    "name": "renaatdemuynck/assetic-image-filters",
+    "description": "A set of Assetic filters for conversion and manipulation of images",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Renaat De Muynck",
+            "email": "renaat.demuynck@gmail.com"
+        }
+    ],
+    "require": {
+        "kriswallsmith/assetic": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "RDM\\Assetic\\Filter\\": "src/"
+        }
+    }
+}
