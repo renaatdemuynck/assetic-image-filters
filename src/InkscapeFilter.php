@@ -25,7 +25,7 @@ class InkscapeFilter extends BaseProcessFilter
      * 
      * @param string $inkscapeBin The path to the NConvert binary
      */
-    public function __construct($inkscapeBin = '/usr/bin/nkscape')
+    public function __construct($inkscapeBin = '/usr/bin/inkscape')
     {
         $this->inkscapeBin = $inkscapeBin;
     }
