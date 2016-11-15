@@ -6,7 +6,7 @@ use Assetic\Asset\AssetInterface;
 use Assetic\Exception\FilterException;
 
 /**
- * Filter for NConvert
+ * Filter for Inkscape
  */
 class InkscapeFilter extends BaseProcessFilter
 {
@@ -23,7 +23,7 @@ class InkscapeFilter extends BaseProcessFilter
     /**
      * Constructs the filter
      * 
-     * @param string $inkscapeBin The path to the NConvert binary
+     * @param string $inkscapeBin The path to the Inkscape binary
      */
     public function __construct($inkscapeBin = '/usr/bin/inkscape')
     {
@@ -49,7 +49,7 @@ class InkscapeFilter extends BaseProcessFilter
             $this->inkscapeBin
         ));
         
-        $input = tempnam(sys_get_temp_dir(), 'assetic_nconvert');
+        $input = tempnam(sys_get_temp_dir(), 'assetic_inkscape');
         $output = sys_get_temp_dir() . '/' . basename($input, '.tmp') . '.' . $this->format;
         
         file_put_contents($input, $asset->getContent());
